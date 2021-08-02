@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>20185014(게시물 작성)</title>
+  <title>게시물 작성</title>
 </head>
 <body>
   <form action="./write_ok.php" method="post">
@@ -12,12 +12,13 @@
           <li>
             <label>
               제목
-              <input type="text" name="suject"/>
+              <input type="text" name="subject"/>
             </label>
           </li>
           <li>
             <label>
               작성자
+              <input type="text" name="writer" />
             </label>
           </li>
           <li>
@@ -28,8 +29,8 @@
           </li>
         </ul>
         <p>
-          <button type="button" onclick="location.href = './list.php'">취소</button>
-          <button type="button">완료</button>
+          <button type="button" onclick="history.back()">취소</button>
+          <button type="submit">완료</button>
         </p>
       </fieldset>
     </form>
